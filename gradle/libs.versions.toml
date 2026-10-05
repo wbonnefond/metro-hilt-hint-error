@@ -1,0 +1,14 @@
+[versions]
+agp = "9.3.1"
+hilt = "2.59.2"
+kotlin = "2.4.20"
+metro = "1.4.5"
+
+[libraries]
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+metro = { id = "dev.zacsweers.metro", version.ref = "metro" }
